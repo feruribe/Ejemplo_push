@@ -6,8 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.urbanairship.UAirship;
-
 public class MainActivity extends AppCompatActivity {
 
     Button mensaje;
@@ -19,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         mensaje = (Button)findViewById(R.id.btn1);
 
-        UAirship.takeOff(getApplication(), new UAirship.OnReadyCallback() {
+        /*UAirship.takeOff(getApplication(), new UAirship.OnReadyCallback() {
             @Override
             public void onAirshipReady(UAirship airship) {
 
@@ -28,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 airship.getPushManager().editTags().addTag("android_6").removeTag("").apply();
             }
         });
+*/
 
 
         mensaje.setOnClickListener(new View.OnClickListener() {
